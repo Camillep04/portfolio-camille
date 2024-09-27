@@ -1,0 +1,103 @@
+<!--portfolio start -->
+<section id="portfolio" class="portfolio">
+    <div class="portfolio-details pad-top">
+        <div class="section-heading text-center">
+            <h2>portfolio</h2>
+        </div>
+        <div class="container">
+            <div class="portfolio-content">
+                <div class="isotope">
+                    <div class="row">
+                        <div class="col-sm-4 popup-gallery">
+                            <div class="item">
+                              <a href="img/galerie/1.jpg"><img src="img/galerie/1.jpg" alt="portfolio image"/></a>
+                            </div>
+                            <div class="item">
+                                <a href="img/galerie/2.jpg"><img src="img/galerie/2.jpg" alt="portfolio image"/></a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="item">
+                                <a href="img/galerie/3.jpg"><img src="img/galerie/3.jpg" alt="portfolio image"/></a>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="item">
+                                <img src="img/galerie/4.jpg" alt="portfolio image"/>
+                            </div>
+                            <div class="item">
+                                <img src="img/galerie/5.jpg" alt="portfolio image"/>
+                            </div>
+                            <div class="item">
+                                <img src="img/galerie/7.jpg" alt="portfolio image"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img src="img/galerie/appareil.png" alt="" class="appareil img-fluid">
+    </div>
+
+</section>
+<!--portfolio end -->
+
+<div class="polaroid-camera">
+    <button id="button"></button>
+    <div id="circle"></div>
+    <div class="lens">
+      <div class="reflection"></div>
+    </div>
+    <div class="flash"></div>
+    <div class="stripes"></div>
+    <div class="bottom">
+      <div class="bottom-front"></div>
+    </div>
+    <div class="slot"></div>
+    <div class="shadow"></div>
+    <div id="photo" class="photo">
+      <div class="house">
+        <div class="windows"></div>
+      </div>
+      <div class="grey-alien">
+        <div class="eye-left"></div>
+        <div class="eye-right"></div>
+      </div>
+      <div class="ufo">
+        <div class="outer"></div>
+        <div class="inner"></div>
+        <div class="lights">
+            <div class="light light1"></div>
+            <div class="light light2"></div>
+            <div class="light light3"></div>
+        </div>
+    </div>
+    </div>
+  </div>
+
+  <script>
+    let light = document.getElementById('circle');
+
+    document.getElementById('button').addEventListener('click', () => {
+      light.classList.remove('flash-animation');
+      setTimeout(function(){
+        light.classList.add('flash-animation');
+      }, 500);
+    });
+
+document.getElementById('button').addEventListener('click', () => {
+  playAlienSound();
+});
+    let eject = document.getElementById('photo');
+
+    document.getElementById('button').addEventListener('click', () => {
+      eject.classList.remove('eject-photo');
+      setTimeout(function(){
+        eject.classList.add('eject-photo');
+      }, 500);
+    });
+  </script>

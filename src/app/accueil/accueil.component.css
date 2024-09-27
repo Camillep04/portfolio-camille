@@ -1,0 +1,48 @@
+/* WRITING */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+.writing{
+	font-family: Montserrat;
+	/*Set the position to relative in order to place the sidebar then.*/
+	position: relative;
+    color: #f92c2c;
+    text-transform: uppercase;
+    font-size: larger;
+    height: 70px;
+}
+/* WRITING END */
+.bg-noir{
+    background-color: #343A40;
+}
+.img{
+    width: 50%;
+}
+.img-2{
+    width: 20%;
+}
+
+/* début ABOUT */
+.about_list_icon{
+    background-color: red;
+}
+.about_container{
+    box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
+}
+.img-text {
+    padding: 4px;
+    float: left; 
+    margin-right: 15px;
+    margin-bottom: 4px;
+    width: 70%;
+    height: auto;
+}
+.feather-github {
+    stroke: red; /* Change la couleur du contour */
+}
+.feather-github {
+    fill: blue; /* Change la couleur de remplissage */
+}
+.taille_texte{
+    font-size: 1.6em;
+}
+/* fin ABOUT */
