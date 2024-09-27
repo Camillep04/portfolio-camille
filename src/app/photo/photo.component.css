@@ -555,3 +555,7 @@ position: absolute;
 .pad-top{
   padding-top: 100px;
 }
+
+.portfolio{
+  background-color: rgb(28, 28, 28);
+}
