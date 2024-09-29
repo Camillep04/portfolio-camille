@@ -29,7 +29,7 @@ jobs:
           node-version: lts/*
 
       - name: Install step
-        run: "npm install"
+        run: "npm install -g @angular/cli"
 
       - name: Build step
         run: "ng build"
