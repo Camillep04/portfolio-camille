@@ -29,14 +29,14 @@ jobs:
           node-version: lts/*
 
       - name: Install step
-        run: "npm install"
+        run: "npm install -g @angular/cli"
 
       - name: Build step
-        run: "ng build"
+        run: "npm run start"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "camille-prothin-portfolio"
+          project: "camille-prothin-protfolio"
           entrypoint: "main.ts"
-          root: "../"
+          root: "./"
