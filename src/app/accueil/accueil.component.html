@@ -1,15 +1,20 @@
 <section id="welcome-hero" class="welcome-hero">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 text-center">
+            <!-- Image de fond en arrière-plan -->
+            <img src="img/20.jpg" alt="Background GIF" class="background-image">
+            
+            <!-- Texte centré au-dessus de l'image -->
+            <div class="col-md-12 text-center overlay-text">
                 <div class="header-text">
                     <h2>J'aime m'amuser en :<span><h1 class="writing" id="text"></h1></span></h2>
-                    <a href="/audiovisuel">VOIR MES PROJETS</a>
+                    <a href="/projets">VOIR MES PROJETS</a>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 
 <!--about start -->
 <section id="about" class="about bg-noir">
@@ -17,9 +22,10 @@
         <h2 class="text-light">Qui est Camille ?</h2>
     </div>
     <div class="mt-5 d-flex justify-content-center align-items-center flex-column">
-        <div class="mt-5 d-flex flex-column flex-sm-row justify-content-around align-items-center">
-            <div class="col-12 col-sm-6 mb-4">
-                <div class="single-about-txt text-center text-sm-left">
+        
+        <div class="mt-5 d-flex flex-column flex-md-row justify-content-around align-items-center flex-wrap">
+            <div class="col-12 col-md-6 mb-4">
+                <div class="single-about-txt text-center text-md-left">
                     <img src="img/camille.jpg" alt="profile_image" class="img-fluid img-text">
                     <p class="text-light taille_texte text-justify pb-4">
                         Je suis une jeune diplômée d'un Bachelor Universitaire de Technologie dans les Métiers du Multimédia et de l'Internet et depuis quelques années j'ai découvert la photo et la vidéo.
@@ -53,89 +59,88 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-5 d-flex flex-column align-items-center">
-                <h1 class="text-light mb-3 text-center">CV VIDÉO</h1>
-                <iframe width="100%" height="315" class="about_container" src="https://www.youtube.com/embed/mEfVm8KEZIk?si=XcFpNegqg9BM2SPX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <div class="header-text mt-5">
+            <div class="col-12 col-md-5 d-flex flex-column align-items-center">
+                <div class="section-heading text-center">
+                    <h2 class="text-light pb-4">CV vidéo</h2>
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oq8p9SE9Dm8?si=zl7sCfmspJQ361VL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                <div class="header-text mt-5">
                     <a href="img/CV-camille.pdf" class="d-flex justify-content-center" download>Télécharger mon CV</a>
                 </div>
             </div>
         </div>
+        
     </div>
 </section>
 <!--about end -->
 
-
 <!--clients start -->
-<section id="clients" class="clients">
-    <div class="section-heading text-center">
+<section id="clients" class="clients pb-5 mb-5">
+    <div class="section-heading text-center mb-5">
         <h2>Compétences</h2>
     </div>
-    <div class="clients-area">
-        <div class="container">
-            <div class="owl-carousel owl-theme" id="client">
-                <div class="item">
-                    <img src="img/adobe/lrc.png" alt="lightroom" />
-                </div>
-                <div class="item">
-                    <img src="img/adobe/ps.png" alt="photoshop" />
-                </div>
-                <div class="item">
-                    <img src="img/adobe/ae.png" alt="after effects" />
-                </div>
-                <div class="item">
-                    <img src="img/adobe/pr.png" alt="premier pro" />
-                </div>
-                <div class="item">
-                    <img src="img/adobe/id.png" alt="indesign" />
-                </div>
-                <div class="item">
-                    <img src="img/adobe/ai.png" alt="illustrator" />
-                </div>
-                <div class="item">
-                    <img src="img/code/vscode.png" alt="visual studio code" />
-                </div>
-                <div class="item">
-                    <img src="img/code/boostrap.png" alt="boostsrap" />
-                </div>
-                <div class="item">
-                    <img src="img/code/html.png" alt="html" />
-                </div>
-                <div class="item">
-                    <img src="img/code/css.png" alt="css" />
-                </div>
-                <div class="item">
-                    <img src="img/code/js.png" alt="javascript" />
-                </div>
-                <div class="item">
-                    <img src="img/code/php.png" alt="php" />
-                </div>
-                <div class="item">
-                    <img src="img/autre/davinci.png" alt="davinci resolve" />
-                </div>
-                <div class="item">
-                    <img src="img/autre/unity.png" alt="unity" />
-                </div>
-                <div class="item">
-                    <img src="img/autre/canva.png" alt="canva" />
-                </div>
+
+    <div class="slider">
+        <div class="slide-track">
+            <div class="slide">
+                <img src="img/adobe/ae.png" height="100" width="100" alt="" />
+            </div>
+            <div class="slide">
+                <img src="img/adobe/ai.png" height="100" width="100" alt="" />
+            </div>
+            <div class="slide">
+                <img src="img/adobe/id.png" height="100" width="100" alt="" />
+            </div>
+            <div class="slide">
+                <img src="img/adobe/lrc.png" height="100" width="100" alt="" />
+            </div>
+            <div class="slide">
+                <img src="img/adobe/pr.png" height="100" width="100" alt="" />
+            </div>
+            <div class="slide">
+                <img src="img/adobe/ps.png" height="100" width="100" alt="" />
+            </div>
+            <div class="slide">
+                <img src="img/code/boostrap.png" height="100" width="100" alt="" />
+            </div>
+            <div class="slide">
+                <img src="img/code/css.png" height="100" width="100" alt="" />
+            </div>
+            <div class="slide">
+                <img src="img/code/html.png" height="100" width="100" alt="" />
+            </div>
+            <div class="slide">
+                <img src="img/code/js.png" height="100" width="100" alt="" />
+            </div>
+            <div class="slide">
+                <img src="img/code/php.png" height="100" width="100" alt="" />
+            </div>
+            <div class="slide">
+                <img src="img/code/vscode.png" height="100" width="100" alt="" />
+            </div>
+            <div class="slide">
+                <img src="img/autre/canva.png" height="100" width="100" alt="" />
+            </div>
+            <div class="slide">
+                <img src="img/autre/davinci.png" height="100" width="100" alt="" />
+            </div>
+            <div class="slide">
+                <img src="img/autre/unity.png" height="100" width="100" alt="" />
             </div>
         </div>
     </div>
-
-</section><!--/.clients-->
+</section>
 
 <!-- ticket -->
 <div class="section-heading text-center">
     <h2>Plonger dans mon univers ?</h2>
 </div>
-<div class="d-flex justify-content-around m-5">
-    <div class="cardWrap">
-        <a href="/audiovisuel" class="survol-ticket">
+<div class="d-flex justify-content-around m-5 d-flex flex-sm-column flex-md-column flex-lg-row ">
+    <div class="cardWrap d-flex justify-content-center">
+        <a href="/projets" class="survol-ticket d-flex justify-content-md-center mb-5">
             <div class="card cardLeft">
             <h1 class="text-light"><span>TICKET</span> PROJET</h1>
             <div class="title">
-                <h2>Athlète quel est ton rêve ?</h2>
+                <h2 class="text-uppercase"><b>Athlète quel est ton rêve ?</b></h2>
                 <span>film</span>
             </div>
             <div class="name">
@@ -158,12 +163,12 @@
         </a>
     </div>
 
-    <div class="cardWrap">
-        <a href="/photo" class="survol-ticket">
+    <div class="cardWrap d-flex justify-content-center">
+        <a href="/photo" class="survol-ticket d-flex ustify-content-md-center mb-5">
             <div class="card cardLeft">
             <h1 class="text-light"><span>TICKET</span> PHOTO</h1>
             <div class="title">
-                <h2>Ma passion de la photo</h2>
+                <h2 class="text-uppercase"><b>Ma passion de la photo</b></h2>
                 <span>film</span>
             </div>
             <div class="name">
@@ -185,41 +190,13 @@
             </div>
         </a>
     </div>
-    
-    <div class="cardWrap">
-        <a href="/contact" class="survol-ticket">
-            <div class="card cardLeft">
-            <h1 class="text-light"><span>TICKET</span> CONTACT </h1>
-            <div class="title">
-                <h2>Me contacter</h2>
-                <span>film</span>
-            </div>
-            <div class="name">
-                <h2>Camille Prothin</h2>
-                <span>réalisateur</span>
-            </div>
-            <div class="seat">
-                <h2>125</h2>
-                <span>vues</span>
-            </div>
-            
-            </div>
-            <div class="card cardRight">
-            <div class="eye"></div>
-            <div class="number">
-                <h3>125</h3>
-                <span>vues</span>
-            </div>
-            </div>
-        </a>
-    </div>
 </div>
 <!-- fin ticket -->
 
 <!--education start -->
 <section id="education" class="education">
     <div class="section-heading text-center">
-        <h2>Expériences</h2>
+        <h2 class="test">Expériences</h2>
     </div>
     <div class="container">
         <div class="education-horizontal-timeline">
@@ -237,7 +214,7 @@
                         <div class="timeline">
                             <div class="timeline-content">
                                 <h4 class="title">
-                                    Agence web <a href="https://www.ciweb.nc/">Ciweb</a>
+                                    Agence web Ciweb
                                 </h4>
                                 <p class="description pt-3">
                                     Refonte site web - front et back end - Laravel - JQuery - BDD - PHP - JS - HTML - CSS
@@ -315,42 +292,8 @@
             </div>
         </div>
     </div>
-
 </section><!--/.education-->
 <!--education end -->
-
-<!-- photo -->
-<div class="section-heading text-center mb-5">
-    <h2>PHOTO</h2>
-</div>
-<div class="d-flex flex-row justify-content-around">
-    <div class="polaroid survol-ticket">
-        <a href="/photo">
-            <div class="polaroid-img"></div>
-        </a>
-    </div>
-    <div class="polaroid survol-ticket">
-        <a href="/photo">
-            <div class="polaroid-img"></div>
-        </a>
-    </div>
-    <div class="polaroid survol-ticket">
-        <a href="/phto">
-            <div class="polaroid-img"></div>
-        </a>
-    </div>
-    <div class="polaroid survol-ticket">
-        <a href="/photo">
-            <div class="polaroid-img"></div>
-        </a>
-    </div>
-    <div class="polaroid survol-ticket">
-        <a href="/photo">
-            <div class="polaroid-img"></div>
-        </a>
-    </div>
-</div>
-<!-- fin photo -->
 
 <!--education start -->
 <section id="education" class="education">
@@ -359,7 +302,7 @@
     </div>
     <div class="container">
         <div class="education-horizontal-timeline">
-            <div class="row">
+            <div class="row d-flex justify-content-center">
                 <div class="col-sm-4">
                     <div class="single-horizontal-timeline">
                         <div class="experience-time">
@@ -410,3 +353,56 @@
 
 </section><!--/.education-->
 <!--education end -->
+
+<!-- photo -->
+<div class="section-heading text-center mb-5 mt-5 pt-5">
+    <h2>PHOTO</h2>
+</div>
+<div class="d-flex flex-row justify-content-around flex-wrap mb-3">
+    <div class="polaroid survol-ticket d-flex flex-column align-items-center">
+        <a href="/photo">
+            <div class="polaroid-img d-flex justify-content-center">
+                <div class="polaroid-title">
+                    <p>Enfant de la forêt</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="polaroid survol-ticket d-flex flex-column align-items-center">
+        <a href="/photo">
+            <div class="polaroid-img d-flex justify-content-center">
+                <div class="polaroid-title">
+                    <p>Creek Pernod</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="polaroid survol-ticket d-flex flex-column align-items-center">
+        <a href="/photo">
+            <div class="polaroid-img d-flex justify-content-center">
+                <div class="polaroid-title">
+                    <p>Loutre pirate</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="polaroid survol-ticket d-flex flex-column align-items-center">
+        <a href="/photo">
+            <div class="polaroid-img d-flex justify-content-center">
+                <div class="polaroid-title">
+                    <p>Le butin</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="polaroid survol-ticket d-flex flex-column align-items-center">
+        <a href="/photo">
+            <div class="polaroid-img d-flex justify-content-center">
+                <div class="polaroid-title">
+                    <p>Rayon de soleil</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<!-- fin photo -->

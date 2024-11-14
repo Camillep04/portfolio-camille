@@ -185,17 +185,37 @@ nav.navbar.bootsnav .navbar-toggle i{color: #f92c2c;}
 /*-------------------------------------
         3.  Welcome-hero
 --------------------------------------*/
-.welcome-hero{
+.welcome-hero {
+    position: relative;
+    height: 890px;
     display: flex;
     align-items: center;
     justify-content: center;
-    position:relative;
-    background:url(/public/img/camille.jpg)no-repeat;
-    background-size:cover;
-    background-position: center;
-    height:890px;
+    overflow: hidden;
 }
-.welcome-hero:before{
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* couvre tout l'espace sans déformation */
+    z-index: 1; /* met l'image derrière le texte */
+}
+
+.overlay-text {
+    position: relative;
+    z-index: 2; /* place le texte au-dessus de l'image */
+    color: white; /* adapte la couleur pour être visible sur l'image */
+}
+
+.header-text h2, .header-text a {
+    color: white; /* adapte la couleur du texte et du lien */
+}
+
+
+/* .welcome-hero:before{
     position:absolute;
     content: " ";
     top:0;
@@ -203,7 +223,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #f92c2c;}
     background:rgba(31,44,108,.65);
     width:100%;
     height:100%;
-}
+} */
 
 /*.header-text-area*/
 .header-text h2 {
@@ -384,8 +404,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #e5ebf2;
+    /* padding-bottom: 50px; */
+    /* border-bottom: 1px solid #e5ebf2; */
 }
 .single-progress-txt {
     display: flex;
